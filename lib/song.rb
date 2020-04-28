@@ -2,11 +2,15 @@ class Song
   
   @@count = 0
   
-  def sefl.count
+  def self.count
     @@count
   end
   
   @@genres = []
+  
+  def self.genres
+    @@genres.uniq
+  end
   
   
   
