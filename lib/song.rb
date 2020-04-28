@@ -12,6 +12,6 @@ class Song
     @@genres.uniq
   end
   
-  def self.inject
+  def self.inject(Hash.new){||}
   
 end
