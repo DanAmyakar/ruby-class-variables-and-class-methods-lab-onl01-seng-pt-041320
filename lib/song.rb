@@ -9,6 +9,8 @@ class Song
     @@count += 1
   end
   
+  attr_reader :
+  
   @@count = 0
   
   def self.count
