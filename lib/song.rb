@@ -9,7 +9,7 @@ class Song
     @@count += 1
   end
   
-  attr_reader :
+  attr_accessor :name, :artist,
   
   @@count = 0
   
