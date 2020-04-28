@@ -34,14 +34,7 @@ class Song
   end
   
   def self.artist_count
-    artist_count = {}
-    @@genres.each do |artist|
-      if artist_count[artist]
-        artist_count[artist] += 1
-      else
-        artist_count[artist] = 1
-      end
-    end
+    @@artists.inject(Hash.new(0)) { |total, i| total[i] += 1 ;total}
   end
   
 end
