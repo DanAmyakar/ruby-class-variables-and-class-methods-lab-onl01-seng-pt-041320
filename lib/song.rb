@@ -1,5 +1,11 @@
 class Song
   
+  def initialize(song_name, song_artist, song_genre)
+    @song_name = song_name
+    @song_artist = song_artist
+    @song_genre = song_genre
+    @@count++
+  
   @@count = 0
   
   def self.count
