@@ -12,6 +12,8 @@ class Song
     @@genres.uniq
   end
   
-  def self.inject(Hash.new(0)) {|type, total| total += 1; total }
+  def self.genre_count
+    @@genre_count.inject(Hash.new(0)) {|type, total| total += 1; total }
+  end
   
 end
