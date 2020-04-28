@@ -1,13 +1,13 @@
 class Song
   
   def initialize(name, artist, genre)
-    @name = name;
-    @artist = artist;
-    @@artists << artist;
-    @genre = genre;
-    @@genres << genre;
-    @@count += 1;
-  end;
+    @name = name
+    @artist = artist
+    @@artists << artist
+    @genre = genre
+    @@genres << genre
+    @@count += 1
+  end
   
   @@count = 0
   
@@ -24,6 +24,8 @@ class Song
   def self.genre_count
     genre_count = {}
     @@genres.each do |genre|
+      
+    end
   end
   
 end
